@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#div {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px;
+    border-radius: 20px;
+}
+
+/* área dos pontos*/
+
+.scores {
+    display: flex;
+}
+
+.score {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score h1 {
+    font-weight: 500;
+    font-size: 1.6em;
+    ;
+}
+
+.life-bar {
+    width: 80%;
+    height: 20px;
+    border: 1px solid #aaa;
+
+}
+
+.life-bar .life {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+
+.life-bar .life.danger {
+    background-color: red;
+}
+
+/* Área do resultado */
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.result .win {
+    color: green;
+}
+
+.result .lose {
+    color: red;
+}
+
+/* Área dos botões */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius:10px ;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.start {
+    background-color: rgb(134, 191, 76);
+    color:rgb(13, 38, 16);
+    border: 0px ;
+
+}
+
+.attack {
+    background-color: rgb(255, 0, 0);
+    color: rgb(249, 190, 190);
+    border: 0px ;
+}
+
+.special-attack {
+    background-color: rgba(228, 137, 18, 0.99);
+    color: rgb(98, 51, 13);
+    border: 0px ;
+
+}
+.heal {
+    background-color: rgb(0, 123, 255);
+    color: rgb(4, 0, 109);
+    border: 0px ;
+
+}
+.give-up {
+    background-color: rgb(161, 160, 161);
+    color: black;
+    border: 0px ;
+
+}
+
+/* Área dos logs */
+
+.logs ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logs ul li {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px;
+    padding: 3px 0px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.player {
+    background-color:#008000aa ;
+    color: white;
+    border-radius: 5px;
+}
+
+.monster {
+    background-color: #a52a2aaa;
+    color: white;
+    border-radius: 5px;
+}
